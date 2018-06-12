@@ -1,0 +1,2 @@
+android.app.Application
+TostaoBeta1.TostaoBeta1

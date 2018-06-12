@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">TostaoApp</string>
+  <string name="login"> Login </string>
+  <string name="menu_pedido"> Pedido</string>
+  <string name="menu_mapa"> Mapa</string>
+  <string name="error"> Error </string>
+  <string name="error_email"> Debe ingresar un correo </string>
+  <string name="error_email_no_valido"> El correo no es valido </string>
+  <string name="error_nombre"> Debe ingresar un nombre </string>
+  <string name="error_apellido"> Debe ingresar un apellido </string>
+  <string name="error_contraseña"> Debe ingresar una contraseña </string>
+  <string name="error_contraseña_minimos_caracteres"> La contraseña debe poseer más de 4 carácteres </string>
+  <string name="error_contraseña_distinta"> Las Contraseñas no coinciden </string>
+  
+  <string name="nombre_usuario"> Nombre </string>
+  <string name="apellido_usuario"> Apellido </string>
+  <string name="correo_usuario"> Correo </string>
+  <string name="contraseña_usuario"> Contraseña</string>
+  <string name="repetir_contraseña_usuario"> Repetir Contraseña</string>
+  <string name="boton_aceptar"> Aceptar </string>
+  <string name="registrar_usuario"> No tienes cuenta? Registrate </string>
+</resources>

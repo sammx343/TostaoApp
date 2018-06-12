@@ -1,0 +1,13 @@
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"><include android:id="@+id/toolbar" layout="@layout/toolbar" /><android.support.v7.widget.RecyclerView android:id="@+id/recycler" android:scrollbars="vertical" android:layout_height="0dp" android:layout_width="match_parent" android:layout_weight="5" /><LinearLayout android:padding="10dp" android:orientation="horizontal" android:layout_height="0dp" android:layout_width="match_parent" android:layout_weight="1" android:gravity="center"><TextView android:text="No. Productos : " android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="3" /><TextView android:id="@+id/cantidadProductos" android:text="0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="left" /><TextView android:text="Total : " android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="3" /><TextView android:id="@+id/totalCompra" android:text="$0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="left" /></LinearLayout><!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:background="#44FF44" />
+    </LinearLayout>
+    --></LinearLayout>

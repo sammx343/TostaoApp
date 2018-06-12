@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Crosslight.Xamarin.Build.Download.25.3.1\build\Crosslight.Xamarin.Build.Download.props" Condition="Exists('..\packages\Crosslight.Xamarin.Build.Download.25.3.1\build\Crosslight.Xamarin.Build.Download.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEBC8560-8CED-45AD-AB3E-9F42928A748F}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TostaoBeta1</RootNamespace>
+    <AssemblyName>TostaoBeta1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>PdbOnly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLipsum.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=593e1df460e1bda0, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLipsum.1.1.0\lib\netstandard1.0\NLipsum.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a84b7dcfb1391f7f, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\MonoAndroid\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\MonoAndroid\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\MonoAndroid\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.lib.e_sqlite3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e4ad490600e2234c, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.lib.e_sqlite3.android.1.1.5\lib\MonoAndroid\SQLitePCLRaw.lib.e_sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.e_sqlite3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9c301db686d0bd12, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.provider.e_sqlite3.android.1.1.5\lib\MonoAndroid\SQLitePCLRaw.provider.e_sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.Animated.Vector.Drawable.25.3.1\lib\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Annotations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.Annotations.25.3.1\lib\MonoAndroid70\Xamarin.Android.Support.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Compat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.Compat.25.3.1\lib\MonoAndroid70\Xamarin.Android.Support.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Core.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.Core.UI.25.3.1\lib\MonoAndroid70\Xamarin.Android.Support.Core.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Core.Utils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.Core.Utils.25.3.1\lib\MonoAndroid70\Xamarin.Android.Support.Core.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Fragment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.Fragment.25.3.1\lib\MonoAndroid70\Xamarin.Android.Support.Fragment.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Media.Compat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.Media.Compat.25.3.1\lib\MonoAndroid70\Xamarin.Android.Support.Media.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.v4.25.3.1\lib\MonoAndroid70\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.v7.AppCompat.25.3.1\lib\MonoAndroid70\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.CardView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.v7.CardView.25.3.1\lib\MonoAndroid70\Xamarin.Android.Support.v7.CardView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.v7.RecyclerView.25.3.1\lib\MonoAndroid70\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Vector.Drawable, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.Vector.Drawable.25.3.1\lib\MonoAndroid70\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actividades\CarroDeCompra.cs" />
+    <Compile Include="Actividades\Categorias.cs" />
+    <Compile Include="Actividades\Login.cs" />
+    <Compile Include="Actividades\Menu.cs" />
+    <Compile Include="Actividades\ProductoActividad.cs" />
+    <Compile Include="Actividades\Productos.cs" />
+    <Compile Include="Actividades\Registro.cs" />
+    <Compile Include="ClasesTablas\Categoria.cs" />
+    <Compile Include="ClasesTablas\Producto.cs" />
+    <Compile Include="ClasesTablas\ProductoCompra.cs" />
+    <Compile Include="ClasesTablas\User.cs" />
+    <Compile Include="Clases\Boton.cs" />
+    <Compile Include="Clases\Encriptacion.cs" />
+    <Compile Include="Clases\LayoutBotonCreation.cs" />
+    <Compile Include="Clases\Message.cs" />
+    <Compile Include="Clases\RecyclerViewHolder.cs" />
+    <Compile Include="Clases\SessionManager.cs" />
+    <Compile Include="Clases\XMLButtonParser.cs" />
+    <Compile Include="Conexion\ServiceBus.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="DataHelper\DataBase.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GettingStarted.Xamarin" />
+    <None Include="obj\Debug\build.props" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\devices.cache" />
+    <None Include="obj\Debug\libraryimports.cache" />
+    <None Include="obj\Debug\libraryprojectimports.cache" />
+    <None Include="obj\Debug\resourcepaths.cache" />
+    <None Include="obj\Debug\TostaoBeta1.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\__library_projects__\System.Runtime.stamp" />
+    <None Include="obj\Release\build.props" />
+    <None Include="obj\Release\libraryimports.cache" />
+    <None Include="obj\Release\libraryprojectimports.cache" />
+    <None Include="obj\Release\__library_projects__\System.Runtime.stamp" />
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\CarroDeCompra.axml" />
+    <AndroidResource Include="Resources\layout\Categorias.axml" />
+    <AndroidResource Include="Resources\layout\item.axml" />
+    <AndroidResource Include="Resources\layout\Login.axml" />
+    <AndroidResource Include="Resources\layout\Menu.axml" />
+    <AndroidResource Include="Resources\layout\Producto.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Productos.axml" />
+    <AndroidResource Include="Resources\layout\Registro.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Debug\__library_projects__\System.Runtime\library_project_imports\" />
+    <Folder Include="obj\Release\__library_projects__\System.Runtime\library_project_imports\" />
+    <Folder Include="Resources\mipmap-hdpi\" />
+    <Folder Include="Resources\mipmap-mdpi\" />
+    <Folder Include="Resources\mipmap-xhdpi\" />
+    <Folder Include="Resources\mipmap-xxhdpi\" />
+    <Folder Include="Resources\mipmap-xxxhdpi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\teclado.xml" />
+    <Content Include="obj\Debug\resolved_inspector_assemblies.txt" />
+    <Content Include="obj\Debug\res\values\strings.xml" />
+    <Content Include="obj\Release\res\values\strings.xml" />
+    <AndroidResource Include="Resources\menu\top_menus.xml" />
+    <AndroidResource Include="Resources\menu\top_pedidos.xml" />
+    <AndroidResource Include="Resources\layout\toolbar.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\tags.xml" />
+    <AndroidResource Include="Resources\drawable\shopping_cart.png" />
+    <AndroidResource Include="Resources\drawable\p0000413.png" />
+    <AndroidResource Include="Resources\drawable\p0000404.png" />
+    <AndroidResource Include="Resources\drawable\p0000403.png" />
+    <AndroidResource Include="Resources\drawable\p0000385.png" />
+    <AndroidResource Include="Resources\drawable\p0000384.png" />
+    <AndroidResource Include="Resources\drawable\p0000383.png" />
+    <AndroidResource Include="Resources\drawable\p0000382.png" />
+    <AndroidResource Include="Resources\drawable\p0000381.png" />
+    <AndroidResource Include="Resources\drawable\p0000379.png" />
+    <AndroidResource Include="Resources\drawable\p0000378.png" />
+    <AndroidResource Include="Resources\drawable\p0000377.png" />
+    <AndroidResource Include="Resources\drawable\p0000376.png" />
+    <AndroidResource Include="Resources\drawable\p0000375.png" />
+    <AndroidResource Include="Resources\drawable\p0000374.png" />
+    <AndroidResource Include="Resources\drawable\p0000368.png" />
+    <AndroidResource Include="Resources\drawable\p0000366.png" />
+    <AndroidResource Include="Resources\drawable\p0000365.png" />
+    <AndroidResource Include="Resources\drawable\p0000364.png" />
+    <AndroidResource Include="Resources\drawable\p0000361.png" />
+    <AndroidResource Include="Resources\drawable\p0000360.png" />
+    <AndroidResource Include="Resources\drawable\p0000359.png" />
+    <AndroidResource Include="Resources\drawable\p0000358.png" />
+    <AndroidResource Include="Resources\drawable\p0000357.png" />
+    <AndroidResource Include="Resources\drawable\p0000342.png" />
+    <AndroidResource Include="Resources\drawable\p0000341.png" />
+    <AndroidResource Include="Resources\drawable\p0000340.png" />
+    <AndroidResource Include="Resources\drawable\p0000339.png" />
+    <AndroidResource Include="Resources\drawable\p0000338.png" />
+    <AndroidResource Include="Resources\drawable\p0000321.png" />
+    <AndroidResource Include="Resources\drawable\p0000320.png" />
+    <AndroidResource Include="Resources\drawable\p0000319.png" />
+    <AndroidResource Include="Resources\drawable\p0000318.png" />
+    <AndroidResource Include="Resources\drawable\p0000317.png" />
+    <AndroidResource Include="Resources\drawable\p0000316.png" />
+    <AndroidResource Include="Resources\drawable\p0000313.png" />
+    <AndroidResource Include="Resources\drawable\p0000312.png" />
+    <AndroidResource Include="Resources\drawable\p0000311.png" />
+    <AndroidResource Include="Resources\drawable\p0000310.png" />
+    <AndroidResource Include="Resources\drawable\p0000309.png" />
+    <AndroidResource Include="Resources\drawable\p0000308.png" />
+    <AndroidResource Include="Resources\drawable\p0000307.png" />
+    <AndroidResource Include="Resources\drawable\p0000306.png" />
+    <AndroidResource Include="Resources\drawable\p0000305.png" />
+    <AndroidResource Include="Resources\drawable\p0000304.png" />
+    <AndroidResource Include="Resources\drawable\p0000300.png" />
+    <AndroidResource Include="Resources\drawable\p0000243.png" />
+    <AndroidResource Include="Resources\drawable\p0000239.png" />
+    <AndroidResource Include="Resources\drawable\p0000237.png" />
+    <AndroidResource Include="Resources\drawable\p0000206.png" />
+    <AndroidResource Include="Resources\drawable\p0000204.png" />
+    <AndroidResource Include="Resources\drawable\p0000203.png" />
+    <AndroidResource Include="Resources\drawable\p0000202.png" />
+    <AndroidResource Include="Resources\drawable\p0000140.png" />
+    <AndroidResource Include="Resources\drawable\p0000139.png" />
+    <AndroidResource Include="Resources\drawable\p0000138.png" />
+    <AndroidResource Include="Resources\drawable\p0000137.png" />
+    <AndroidResource Include="Resources\drawable\p0000136.png" />
+    <AndroidResource Include="Resources\drawable\p0000134.png" />
+    <AndroidResource Include="Resources\drawable\p0000131.png" />
+    <AndroidResource Include="Resources\drawable\p0000130.png" />
+    <AndroidResource Include="Resources\drawable\p0000129.png" />
+    <AndroidResource Include="Resources\drawable\p0000124.png" />
+    <AndroidResource Include="Resources\drawable\p0000123.png" />
+    <AndroidResource Include="Resources\drawable\p0000112.png" />
+    <AndroidResource Include="Resources\drawable\p0000111.png" />
+    <AndroidResource Include="Resources\drawable\p0000108.png" />
+    <AndroidResource Include="Resources\drawable\p0000107.png" />
+    <AndroidResource Include="Resources\drawable\p0000106.png" />
+    <AndroidResource Include="Resources\drawable\p0000105.png" />
+    <AndroidResource Include="Resources\drawable\p0000094.png" />
+    <AndroidResource Include="Resources\drawable\p0000093.png" />
+    <AndroidResource Include="Resources\drawable\p0000092.png" />
+    <AndroidResource Include="Resources\drawable\p0000091.png" />
+    <AndroidResource Include="Resources\drawable\p0000089.png" />
+    <AndroidResource Include="Resources\drawable\p0000088.png" />
+    <AndroidResource Include="Resources\drawable\p0000087.png" />
+    <AndroidResource Include="Resources\drawable\p0000085.png" />
+    <AndroidResource Include="Resources\drawable\p0000079.png" />
+    <AndroidResource Include="Resources\drawable\p0000078.png" />
+    <AndroidResource Include="Resources\drawable\p0000077.png" />
+    <AndroidResource Include="Resources\drawable\p0000075.png" />
+    <AndroidResource Include="Resources\drawable\p0000073.png" />
+    <AndroidResource Include="Resources\drawable\p0000072.png" />
+    <AndroidResource Include="Resources\drawable\p0000069.png" />
+    <AndroidResource Include="Resources\drawable\p0000066.png" />
+    <AndroidResource Include="Resources\drawable\p0000065.png" />
+    <AndroidResource Include="Resources\drawable\p0000062.png" />
+    <AndroidResource Include="Resources\drawable\p0000061.png" />
+    <AndroidResource Include="Resources\drawable\p0000060.png" />
+    <AndroidResource Include="Resources\drawable\p0000058.png" />
+    <AndroidResource Include="Resources\drawable\p0000057.png" />
+    <AndroidResource Include="Resources\drawable\p0000056.png" />
+    <AndroidResource Include="Resources\drawable\p0000055.png" />
+    <AndroidResource Include="Resources\drawable\p0000054.png" />
+    <AndroidResource Include="Resources\drawable\p0000047.png" />
+    <AndroidResource Include="Resources\drawable\p0000046.png" />
+    <AndroidResource Include="Resources\drawable\p0000045.png" />
+    <AndroidResource Include="Resources\drawable\p0000043.png" />
+    <AndroidResource Include="Resources\drawable\p0000042.png" />
+    <AndroidResource Include="Resources\drawable\p0000040.png" />
+    <AndroidResource Include="Resources\drawable\p0000039.png" />
+    <AndroidResource Include="Resources\drawable\p0000038.png" />
+    <AndroidResource Include="Resources\drawable\p0000037.png" />
+    <AndroidResource Include="Resources\drawable\p0000036.png" />
+    <AndroidResource Include="Resources\drawable\p0000035.png" />
+    <AndroidResource Include="Resources\drawable\p0000034.png" />
+    <AndroidResource Include="Resources\drawable\p0000033.png" />
+    <AndroidResource Include="Resources\drawable\p0000032.png" />
+    <AndroidResource Include="Resources\drawable\p0000031.png" />
+    <AndroidResource Include="Resources\drawable\p0000030.png" />
+    <AndroidResource Include="Resources\drawable\p0000029.png" />
+    <AndroidResource Include="Resources\drawable\p0000026.png" />
+    <AndroidResource Include="Resources\drawable\p0000025.png" />
+    <AndroidResource Include="Resources\drawable\p0000024.png" />
+    <AndroidResource Include="Resources\drawable\p0000021.png" />
+    <AndroidResource Include="Resources\drawable\p0000020.png" />
+    <AndroidResource Include="Resources\drawable\p0000018.png" />
+    <AndroidResource Include="Resources\drawable\p0000017.png" />
+    <AndroidResource Include="Resources\drawable\p0000016.png" />
+    <AndroidResource Include="Resources\drawable\p0000015.png" />
+    <AndroidResource Include="Resources\drawable\p0000014.png" />
+    <AndroidResource Include="Resources\drawable\p0000013.png" />
+    <AndroidResource Include="Resources\drawable\p0000012.png" />
+    <AndroidResource Include="Resources\drawable\p0000010.png" />
+    <AndroidResource Include="Resources\drawable\p0000009.png" />
+    <AndroidResource Include="Resources\drawable\p0000008.png" />
+    <AndroidResource Include="Resources\drawable\p0000007.png" />
+    <AndroidResource Include="Resources\drawable\p0000004.png" />
+    <AndroidResource Include="Resources\drawable\p0000003.png" />
+    <AndroidResource Include="Resources\drawable\categorias_reposteria.png" />
+    <AndroidResource Include="Resources\drawable\categorias_panaderia_.png" />
+    <AndroidResource Include="Resources\drawable\categorias_panaderia.png" />
+    <AndroidResource Include="Resources\drawable\categorias_otros.png" />
+    <AndroidResource Include="Resources\drawable\categorias_nevera.png" />
+    <AndroidResource Include="Resources\drawable\categorias_ico_next.png" />
+    <AndroidResource Include="Resources\drawable\categorias_consumo.png" />
+    <AndroidResource Include="Resources\drawable\categorias_cocina.png" />
+    <AndroidResource Include="Resources\drawable\categorias_bebida_refri.png" />
+    <AndroidResource Include="Resources\drawable\categorias_bebida_preparada.png" />
+    <AndroidResource Include="Resources\xml\teclado.xml" />
+    <Content Include="THIRD-PARTY-NOTICES.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Redsis.TostaoApp.CrossPlatformLogic\Redsis.TostaoApp.CrossPlatformLogic.csproj">
+      <Project>{9C2A4ABC-7838-4DA6-8A89-F76DFD894478}</Project>
+      <Name>Redsis.TostaoApp.CrossPlatformLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\packages\Crosslight.Xamarin.Android.Support.Annotations.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Annotations.targets" Condition="Exists('..\packages\Crosslight.Xamarin.Android.Support.Annotations.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Annotations.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Crosslight.Xamarin.Android.Support.Annotations.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Annotations.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Crosslight.Xamarin.Android.Support.Annotations.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Annotations.targets'))" />
+    <Error Condition="!Exists('..\packages\Crosslight.Xamarin.Build.Download.25.3.1\build\Crosslight.Xamarin.Build.Download.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Crosslight.Xamarin.Build.Download.25.3.1\build\Crosslight.Xamarin.Build.Download.props'))" />
+    <Error Condition="!Exists('..\packages\Crosslight.Xamarin.Build.Download.25.3.1\build\Crosslight.Xamarin.Build.Download.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Crosslight.Xamarin.Build.Download.25.3.1\build\Crosslight.Xamarin.Build.Download.targets'))" />
+    <Error Condition="!Exists('..\packages\Crosslight.Xamarin.Android.Support.Compat.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Compat.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Crosslight.Xamarin.Android.Support.Compat.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Compat.targets'))" />
+    <Error Condition="!Exists('..\packages\Crosslight.Xamarin.Android.Support.Core.UI.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Core.UI.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Crosslight.Xamarin.Android.Support.Core.UI.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Core.UI.targets'))" />
+    <Error Condition="!Exists('..\packages\Crosslight.Xamarin.Android.Support.Core.Utils.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Core.Utils.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Crosslight.Xamarin.Android.Support.Core.Utils.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Core.Utils.targets'))" />
+    <Error Condition="!Exists('..\packages\Crosslight.Xamarin.Android.Support.Media.Compat.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Media.Compat.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Crosslight.Xamarin.Android.Support.Media.Compat.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Media.Compat.targets'))" />
+    <Error Condition="!Exists('..\packages\Crosslight.Xamarin.Android.Support.Fragment.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Fragment.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Crosslight.Xamarin.Android.Support.Fragment.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Fragment.targets'))" />
+    <Error Condition="!Exists('..\packages\Crosslight.Xamarin.Android.Support.v4.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.v4.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Crosslight.Xamarin.Android.Support.v4.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.v4.targets'))" />
+    <Error Condition="!Exists('..\packages\Crosslight.Xamarin.Android.Support.Vector.Drawable.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Vector.Drawable.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Crosslight.Xamarin.Android.Support.Vector.Drawable.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Vector.Drawable.targets'))" />
+    <Error Condition="!Exists('..\packages\Crosslight.Xamarin.Android.Support.Animated.Vector.Drawable.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Animated.Vector.Drawable.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Crosslight.Xamarin.Android.Support.Animated.Vector.Drawable.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Animated.Vector.Drawable.targets'))" />
+    <Error Condition="!Exists('..\packages\Crosslight.Xamarin.Android.Support.v7.AppCompat.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.v7.AppCompat.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Crosslight.Xamarin.Android.Support.v7.AppCompat.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.v7.AppCompat.targets'))" />
+    <Error Condition="!Exists('..\packages\Crosslight.Xamarin.Android.Support.v7.RecyclerView.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.v7.RecyclerView.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Crosslight.Xamarin.Android.Support.v7.RecyclerView.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.v7.RecyclerView.targets'))" />
+    <Error Condition="!Exists('..\packages\Crosslight.Xamarin.Android.Support.v7.CardView.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.v7.CardView.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Crosslight.Xamarin.Android.Support.v7.CardView.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.v7.CardView.targets'))" />
+  </Target>
+  <Import Project="..\packages\Crosslight.Xamarin.Build.Download.25.3.1\build\Crosslight.Xamarin.Build.Download.targets" Condition="Exists('..\packages\Crosslight.Xamarin.Build.Download.25.3.1\build\Crosslight.Xamarin.Build.Download.targets')" />
+  <Import Project="..\packages\Crosslight.Xamarin.Android.Support.Compat.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Compat.targets" Condition="Exists('..\packages\Crosslight.Xamarin.Android.Support.Compat.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Compat.targets')" />
+  <Import Project="..\packages\Crosslight.Xamarin.Android.Support.Core.UI.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Core.UI.targets" Condition="Exists('..\packages\Crosslight.Xamarin.Android.Support.Core.UI.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Core.UI.targets')" />
+  <Import Project="..\packages\Crosslight.Xamarin.Android.Support.Core.Utils.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Core.Utils.targets" Condition="Exists('..\packages\Crosslight.Xamarin.Android.Support.Core.Utils.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Core.Utils.targets')" />
+  <Import Project="..\packages\Crosslight.Xamarin.Android.Support.Media.Compat.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Media.Compat.targets" Condition="Exists('..\packages\Crosslight.Xamarin.Android.Support.Media.Compat.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Media.Compat.targets')" />
+  <Import Project="..\packages\Crosslight.Xamarin.Android.Support.Fragment.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Fragment.targets" Condition="Exists('..\packages\Crosslight.Xamarin.Android.Support.Fragment.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Fragment.targets')" />
+  <Import Project="..\packages\Crosslight.Xamarin.Android.Support.v4.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.v4.targets" Condition="Exists('..\packages\Crosslight.Xamarin.Android.Support.v4.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.v4.targets')" />
+  <Import Project="..\packages\Crosslight.Xamarin.Android.Support.Vector.Drawable.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Crosslight.Xamarin.Android.Support.Vector.Drawable.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Vector.Drawable.targets')" />
+  <Import Project="..\packages\Crosslight.Xamarin.Android.Support.Animated.Vector.Drawable.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Animated.Vector.Drawable.targets" Condition="Exists('..\packages\Crosslight.Xamarin.Android.Support.Animated.Vector.Drawable.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.Animated.Vector.Drawable.targets')" />
+  <Import Project="..\packages\Crosslight.Xamarin.Android.Support.v7.AppCompat.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.v7.AppCompat.targets" Condition="Exists('..\packages\Crosslight.Xamarin.Android.Support.v7.AppCompat.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.v7.AppCompat.targets')" />
+  <Import Project="..\packages\Crosslight.Xamarin.Android.Support.v7.RecyclerView.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.v7.RecyclerView.targets" Condition="Exists('..\packages\Crosslight.Xamarin.Android.Support.v7.RecyclerView.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.v7.RecyclerView.targets')" />
+  <Import Project="..\packages\Crosslight.Xamarin.Android.Support.v7.CardView.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.v7.CardView.targets" Condition="Exists('..\packages\Crosslight.Xamarin.Android.Support.v7.CardView.25.3.1\build\MonoAndroid70\Crosslight.Xamarin.Android.Support.v7.CardView.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+		Other similar extension points exist, see Microsoft.Common.targets.
+		<Target Name="BeforeBuild">
+		</Target>
+		<Target Name="AfterBuild">
+		</Target>
+	-->
+</Project>

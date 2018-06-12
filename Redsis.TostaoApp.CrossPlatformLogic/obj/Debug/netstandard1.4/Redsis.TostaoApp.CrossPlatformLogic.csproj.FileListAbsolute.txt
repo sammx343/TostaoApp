@@ -1,0 +1,8 @@
+C:\Users\smayor\source\repos\TostaoBeta1\Redsis.TostaoApp.CrossPlatformLogic\bin\Debug\netstandard1.4\Redsis.TostaoApp.CrossPlatformLogic.deps.json
+C:\Users\smayor\source\repos\TostaoBeta1\Redsis.TostaoApp.CrossPlatformLogic\bin\Debug\netstandard1.4\Redsis.TostaoApp.CrossPlatformLogic.dll
+C:\Users\smayor\source\repos\TostaoBeta1\Redsis.TostaoApp.CrossPlatformLogic\bin\Debug\netstandard1.4\Redsis.TostaoApp.CrossPlatformLogic.pdb
+C:\Users\smayor\source\repos\TostaoBeta1\Redsis.TostaoApp.CrossPlatformLogic\obj\Debug\netstandard1.4\Redsis.TostaoApp.CrossPlatformLogic.csproj.CoreCompileInputs.cache
+C:\Users\smayor\source\repos\TostaoBeta1\Redsis.TostaoApp.CrossPlatformLogic\obj\Debug\netstandard1.4\Redsis.TostaoApp.CrossPlatformLogic.AssemblyInfo.cs
+C:\Users\smayor\source\repos\TostaoBeta1\Redsis.TostaoApp.CrossPlatformLogic\obj\Debug\netstandard1.4\Redsis.TostaoApp.CrossPlatformLogic.dll
+C:\Users\smayor\source\repos\TostaoBeta1\Redsis.TostaoApp.CrossPlatformLogic\obj\Debug\netstandard1.4\Redsis.TostaoApp.CrossPlatformLogic.pdb
+C:\Users\smayor\source\repos\TostaoBeta1\Redsis.TostaoApp.CrossPlatformLogic\obj\Debug\netstandard1.4\Redsis.TostaoApp.CrossPlatformLogic.csprojResolveAssemblyReference.cache

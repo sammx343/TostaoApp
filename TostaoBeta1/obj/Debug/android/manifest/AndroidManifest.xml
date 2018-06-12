@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="TostaoBeta1.TostaoBeta1" android:versionCode="1" android:versionName="1.0">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="21" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:allowBackup="true" android:label="@string/app_name" android:theme="@style/MyTheme" android:name="android.app.Application" android:debuggable="true">
+    <activity android:name="md54ef53f6b1840dfba4eb6ad93bb3128f5.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="CarroDeCompra" android:name="md57ef1cdce4861f4aeaa4dcecd935630c0.CarroDeCompra" />
+    <activity android:label="Categorias" android:name="md57ef1cdce4861f4aeaa4dcecd935630c0.Categorias" />
+    <activity android:label="Login" android:name="md57ef1cdce4861f4aeaa4dcecd935630c0.Login" />
+    <activity android:label="Menu" android:name="md57ef1cdce4861f4aeaa4dcecd935630c0.Menu" />
+    <activity android:label="Producto" android:name="md57ef1cdce4861f4aeaa4dcecd935630c0.ProductoActividad" />
+    <activity android:label="Productos" android:name="md57ef1cdce4861f4aeaa4dcecd935630c0.Productos" />
+    <activity android:label="Activity1" android:name="md57ef1cdce4861f4aeaa4dcecd935630c0.Registro" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="TostaoBeta1.TostaoBeta1.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.TostaoBeta1.TostaoBeta1" />
+      </intent-filter>
+    </receiver>
+  </application>
+  <meta-data android:name="android.support.VERSION" android:value="25.3.1" />
+</manifest>
